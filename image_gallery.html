@@ -7,15 +7,154 @@
     <title>Gallery | Memarliq İrsi</title>
 </head>
 <body>
-    <h1 style="text-align: center; font-size: 40px;">Фотогалерея</h1>
-    <ul style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 40px; margin-top: 20px;">
-        <a href="./index.html"><li>home</li></a>
-        <a href="./streets.html"><li>streets</li></a>
-        <a href="./maps.html"><li>maps</li></a>
-        <a href="./image_gallery.html"><li>images</li></a>
-        <a href="./videos.html"><li>videos</li></a>
-    </ul>
+    <nav class="navbar">
+        <div class="logoposition">
+            <div class="logoNav">
+                <a href="./index.html"><img src="./assets/images/Logo_Heritage_page-0001-removebg-preview 1.svg"
+                        alt="logo"></a>
+            </div>
+        </div>
+        <div class="controlMenu">
+            <a href="./streets.html">Küçələr</a>
+            <a href="./maps.html">Xəritələr</a>
+            <a href="./image_gallery.html">Fotolar</a>
+            <a href="./videos.html">Videolar</a>
+        </div>
+        <div class="searchLanguage">
+            <div class="search"><input type="text"><button class="clickToSearch" id="clickToSearch"><img
+                        src="./assets/images/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg"
+                        alt="searchIcon"></button></div>
+            <div class="dropdown">
+                <button id="dropdownButton" class="dropbtn"><img
+                        src="./assets/images/128px-United-kingdom_flag_icon_round.svg 1.svg" alt="languages"><img
+                        id="arrowChange" src="./assets/images/Vector (3).svg" alt="arrow"></button>
+                <div class="dropdown-content">
+                    <a href="#">language1</a>
+                    <a href="#">language2</a>
+                    <a href="#">language3</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Main -->
+     <main class="main">
+        <h1 class="main-title">Bütün Fotolar</h1>
+        <div class="filter">
+            <button class="filter-el">Image Type</button>
+            <button class="filter-el">Image Type</button>
+            <button class="filter-el">Image Type</button>
+            <button class="filter-el">Image Type</button>
+            <button class="filter-el">Image Type</button>
+            <button class="filter-el">Image Type</button>
+            <button class="filter-el">Image Type</button>
+        </div>
+        <div class="gallery">
+            <div class="gallery-card">
+                <img src="assets/images/Flame Towers.png" alt="">
+                <p>Flame Towers</p>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/images/Flame Towers.png" alt="">
+                <p>Flame Towers</p>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/images/Flame Towers.png" alt="">
+                <p>Flame Towers</p>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/images/Flame Towers.png" alt="">
+                <p>Flame Towers</p>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/images/Flame Towers.png" alt="">
+                <p>Flame Towers</p>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/images/Flame Towers.png" alt="">
+                <p>Flame Towers</p>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/images/Flame Towers.png" alt="">
+                <p>Flame Towers</p>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/images/Flame Towers.png" alt="">
+                <p>Flame Towers</p>
+            </div>
+            <div class="gallery-card">
+                <img src="assets/images/Flame Towers.png" alt="">
+                <p>Flame Towers</p>
+            </div>
+        </div>
+        <div class="pagination">
+            <a href="#" class="arrow"><img src="assets/images/Left Arrow.svg" alt=""></a>
+            <a href="#" class="active">1</a>
+            <a href="#">.</a>
+            <a href="#">.</a>
+            <a href="#">.</a>
+            <a href="#">5</a>
+            <a href="#" class="arrow"><img src="assets/images/RIght Arrow.svg" alt=""></a>
+        </div>
+     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="firstLine">
+            <div>
+                <a href="./index.html" class="footerLogoName">
+                    <img src="./assets/images/Logo_Heritage_page-0001-removebg-preview 1.svg" alt="footerLogo">
+                    <span>Memarliq İrsi</span>
+                </a>
+            </div>
+            <div class="number">
+                <img src="./assets/images/calling.svg" alt="number">
+                <a href="tel:+994502107359">050 210 73 59</a>
+            </div>
+            <div class="mail">
+                <img src="./assets/images/gmail.svg" alt="mail">
+                <a href="mailto:heritagelist@gmail.com">heritagelist@gmail.com</a>
+            </div>
+            <div class="location">
+                <img src="./assets/images/location.svg" alt="location">
+                <a href="https://www.google.com/maps/search/?api=1&query=26+Murtuza+Mukhtarov,+Baku" target="_blank">26 Murtuza Mukhtarov, Baku</a>
+            </div>
+        </div>
+        <div class="firstLine">
+            <h2>Information</h2>
+            <a href="#">Articles</a>
+            <a href="#">Maps</a>
+            <a href="#">Images</a>
+            <a href="#">Videos</a>
+        </div>
+        <div class="firstLine">
+            <h2>Service</h2>
+            <a href="#">Articles</a>
+            <a href="#">Maps</a>
+            <a href="#">Images</a>
+            <a href="#">Videos</a>
+        </div>
+        <div class="firstLine">
+            <h2>Subscribe</h2>
+            <p class="infoFooter">Enter your email below to be the first to know
+                about articles about history and architechture.</p>
+                <div class="mailto" onclick="alert('доработать систему отправки сообщений')">
+                    <div class="iconMail">
+                        <img src="./assets/images/gmail.svg" alt="sendMail">
+                        <span>Your Email</span>
+                    </div>
+                    <div>
+                        <img src="./assets/images/Vector 190.svg" alt="arrowRight">
+                    </div>
+                </div>
+        </div>
+    </footer>
+
+    <div class="end">
+        <span>©2024 Copyrgights HeritageList all rights are reserved️ </span>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <script src="./assets/scripts/image_gallery.js"></script>
 </body>
 </html>
