@@ -85,7 +85,31 @@
         <div class="wrapperes" id="letter_A">
             <div class="streetsLetter">
                 <span class="letter">A</span>
-                <div class="street">Alişan küçəsi</div>
+                <div id="clickToOpen" class="street">Alişan küçəsi</div>
+
+                <div id="textDiv" style="display: none;">
+                    <div class="grid-container2">
+                        <div class="cardMonument" id="clickToMoreInfo">
+                            <img src="./assets/images/image 2.svg" alt="monument">
+                            <h3>Monument 1</h3>
+                        </div>
+                        <div class="cardMonument">
+                            <img src="./assets/images/image 2.svg" alt="monument">
+                            <h3>Monument 2</h3>
+                        </div>
+                        <div class="cardMonument">
+                            <img src="./assets/images/image 2.svg" alt="monument">
+                            <h3>Monument 3</h3>
+                        </div>
+                        <div class="cardMonument">
+                            <img src="./assets/images/image 2.svg" alt="monument">
+                            <h3>Monument 4</h3>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
                 <div class="street">Alişan küçəsi</div>
                 <div class="street">Alişan küçəsi</div>
                 <div class="street">Alişan küçəsi</div>
@@ -155,9 +179,11 @@
 
     <footer class="footer">
         <div class="firstLine">
-            <div class="footerLogoName">
-                <img src="./assets/images/Logo_Heritage_page-0001-removebg-preview 1.svg" alt="footerLogo">
-                <span>Memarliq İrsi</span>
+            <div>
+                <a href="./index.html" class="footerLogoName">
+                    <img src="./assets/images/Logo_Heritage_page-0001-removebg-preview 1.svg" alt="footerLogo">
+                    <span>Memarliq İrsi</span>
+                </a>
             </div>
             <div class="number">
                 <img src="./assets/images/calling.svg" alt="number">
@@ -190,7 +216,15 @@
             <h2>Subscribe</h2>
             <p class="infoFooter">Enter your email below to be the first to know
                 about articles about history and architechture.</p>
-                <div>mail to</div>
+                <div class="mailto" onclick="alert('доработать систему отправки сообщений')">
+                    <div class="iconMail">
+                        <img src="./assets/images/gmail.svg" alt="sendMail">
+                        <span>Your Email</span>
+                    </div>
+                    <div>
+                        <img src="./assets/images/Vector 190.svg" alt="arrowRight">
+                    </div>
+                </div>
         </div>
     </footer>
 

@@ -32,3 +32,22 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+let clickToOpen = document.querySelector("#clickToOpen");
+let textDiv = document.querySelector("#textDiv");
+
+clickToOpen.addEventListener("click", () => {
+    // Проверка, скрыт ли элемент
+    if (textDiv.style.display === "none") {
+        textDiv.style.display = "block";  // Показать элемент
+    } else {
+        textDiv.style.display = "none";   // Скрыть элемент, если он уже виден
+    }
+});
+
+
+let clickToMoreInfo = document.querySelector("#clickToMoreInfo");
+
+clickToMoreInfo.addEventListener("click", () => {
+    alert("переход на страницу с подробной информацией об монументу");
+})

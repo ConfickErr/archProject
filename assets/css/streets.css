@@ -133,6 +133,7 @@ body {
     background-color: #113B48;
     position: relative;
     padding-top: 65px;
+    padding-bottom: 120px;
 }
 
 
@@ -160,7 +161,6 @@ h1 {
 .content {
     display: flex;
     gap: 8px;
-    /* Если нужно добавить отступы между элементами */
 }
 
 
@@ -248,6 +248,7 @@ h1 {
     text-align: left;
     padding: 5px;
     margin-top: 16px;
+    cursor: pointer;
 }
 
 
@@ -268,7 +269,6 @@ h1 {
     border-radius: 4px;
     transition: opacity 0.6s ease, visibility 0s 0.6s;
     pointer-events: none;
-    /* Сначала кнопка не кликабельна */
 }
 
 #myBtn.show {
@@ -276,7 +276,6 @@ h1 {
     visibility: visible;
     transition: opacity 0.6s ease;
     pointer-events: auto;
-    /* Делает кнопку кликабельной */
 }
 
 #myBtn:hover {
@@ -289,6 +288,15 @@ h1 {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 100px;
+
+    h2 {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 23.12px;
+        text-align: left;
+        color: #000000;
+    }
 
     a {
         font-size: 16px;
@@ -329,7 +337,30 @@ h1 {
     text-align: left;
 }
 
-.number, .mail, .location {
+.number,
+.mail,
+.location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.mailto {
+    width: 307px;
+    height: 50px;
+    padding: 13px 16px 13px 16px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid black;
+    opacity: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.iconMail {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -341,4 +372,45 @@ h1 {
     background-color: #113B48;
     color: white;
     padding: 10px;
+}
+
+
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Два столбца одинаковой ширины */
+    grid-template-rows: auto; /* Автоматическая высота строк */
+    gap: 20px; /* Отступы между элементами */
+    justify-items: center; /* Центрирование карточек по горизонтали */
+    align-items: center; /* Центрирование карточек по вертикали */
+}
+
+.cardMonument {
+    width: 230px;
+    height: 202.29px;
+    border-radius: 16px;
+    opacity: 1;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.cardMonument img {
+    width: 207.83px;
+    height: 138.55px;
+    border-radius: 12px;
+    opacity: 1; /* Делаем изображение видимым */
+}
+
+.cardMonument h3 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.55px;
+    text-align: left;
+    color: #000000;
+    margin-top: 10px; /* Отступ сверху */
 }
