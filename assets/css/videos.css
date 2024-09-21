@@ -124,6 +124,10 @@ body {
     display: block;
 }
 
+.rotate-arrow {
+    transform: rotate(180deg);
+}
+
 /* Main */
 .main {
     background-color: #16325B;
