@@ -147,6 +147,7 @@ body {
     gap: 13px;
     margin-bottom: 40px;
     padding-bottom: 5px;
+    overflow-y: hidden;
 }
 
 .filter::-webkit-scrollbar {
