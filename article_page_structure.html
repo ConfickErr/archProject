@@ -7,14 +7,121 @@
     <title>(передать имя памятника) | Memarliq İrsi</title>
 </head>
 <body>
-    <h1 style="text-align: center; font-size: 40px;">Страница с информацией</h1>
-    <ul style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 40px; margin-top: 20px;">
-        <a href="./index.html"><li>home</li></a>
-        <a href="./streets.html"><li>streets</li></a>
-        <a href="./maps.html"><li>maps</li></a>
-        <a href="./image_gallery.html"><li>images</li></a>
-        <a href="./videos.html"><li>videos</li></a>
-    </ul>
+    <nav class="navbar">
+        <div class="logoposition">
+            <div class="logoNav">
+                <a href="./index.html"><img src="./assets/images/Logo_Heritage_page-0001-removebg-preview 1.svg"
+                        alt="logo"></a>
+            </div>
+        </div>
+        <div class="controlMenu">
+            <a href="./streets.html">Küçələr</a>
+            <a href="./maps.html">Xəritələr</a>
+            <a href="./image_gallery.html">Fotolar</a>
+            <a href="./videos.html">Videolar</a>
+        </div>
+        <div class="searchLanguage">
+            <div class="search"><input type="text"><button class="clickToSearch" id="clickToSearch"><img
+                        src="./assets/images/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg"
+                        alt="searchIcon"></button></div>
+            <div class="dropdown">
+                <button id="dropdownButton" class="dropbtn"><img
+                        src="./assets/images/128px-United-kingdom_flag_icon_round.svg 1.svg" alt="languages"><img
+                        id="arrowChange" src="./assets/images/Vector (3).svg" alt="arrow"></button>
+                <div class="dropdown-content">
+                    <a href="#">language1</a>
+                    <a href="#">language2</a>
+                    <a href="#">language3</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <h1>Передаем сюда название монумента</h1>
+        <div class="iframeDiv"><iframe src="./monument_images.html" width="800px" height="600px" title="images"></iframe></div>
+        <div class="spanesInfo">
+            <span>Writed by: </span>
+            <span>Baku, Azerbaijan</span>
+            <span>Architect: </span>
+            <span>Area: 9 mil square meters</span>
+            <span>Year: 2001</span>
+            <span>Photograph: </span>
+            <span>Lead Architect: </span>
+            <span>City: Baku</span>
+            <span>Street: </span>
+        </div>
+        <div class="mainInfoPart">
+            <img src="./assets/images/Flame Towers.png" alt="firstImage">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quae dignissimos praesentium porro,     excepturi quod deleniti itaque reprehenderit, consequuntur corrupti repellat animi quis nobis maiores   molestias. Consequatur incidunt autem repellendus!</p>
+
+            <img src="./assets/images/Flame Towers.png" alt="firstImage">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quae dignissimos praesentium porro,     excepturi quod deleniti itaque reprehenderit, consequuntur corrupti repellat animi quis nobis maiores   molestias. Consequatur incidunt autem repellendus!</p>
+
+            <img src="./assets/images/Flame Towers.png" alt="firstImage">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quae dignissimos praesentium porro,     excepturi quod deleniti itaque reprehenderit, consequuntur corrupti repellat animi quis nobis maiores   molestias. Consequatur incidunt autem repellendus!</p>
+
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5110.425468582295!2d49.  86385005775147!3d40.39384716781243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13. 1!3m3!1m2!1s0x40307d40a035a6bd%3A0xa8c2cbf267a83fbd!2z0KbQtdC90YLRgCDQk9C10LnQtNCw0YDQsCDQkNC70LjQtdCy0LA!5  e0!3m2!1sru!2saz!4v1727125571535!5m2!1sru!2saz" width="600" height="450" style="border:0;"    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="firstLine">
+            <div>
+                <a href="./index.html" class="footerLogoName">
+                    <img src="./assets/images/Logo_Heritage_page-0001-removebg-preview 1.svg" alt="footerLogo">
+                    <span>Memarliq İrsi</span>
+                </a>
+            </div>
+            <div class="number">
+                <img src="./assets/images/calling.svg" alt="number">
+                <a href="tel:+994502107359">050 210 73 59</a>
+            </div>
+            <div class="mail">
+                <img src="./assets/images/gmail.svg" alt="mail">
+                <a href="mailto:heritagelist@gmail.com">heritagelist@gmail.com</a>
+            </div>
+            <div class="location">
+                <img src="./assets/images/location.svg" alt="location">
+                <a href="https://www.google.com/maps/search/?api=1&query=26+Murtuza+Mukhtarov,+Baku" target="_blank">26 Murtuza Mukhtarov, Baku</a>
+            </div>
+        </div>
+        <div class="firstLine">
+            <h2>Information</h2>
+            <a href="#">Articles</a>
+            <a href="#">Maps</a>
+            <a href="#">Images</a>
+            <a href="#">Videos</a>
+        </div>
+        <div class="firstLine">
+            <h2>Service</h2>
+            <a href="#">Articles</a>
+            <a href="#">Maps</a>
+            <a href="#">Images</a>
+            <a href="#">Videos</a>
+        </div>
+        <div class="firstLine">
+            <h2>Subscribe</h2>
+            <p class="infoFooter">Enter your email below to be the first to know
+                about articles about history and architechture.</p>
+                <div class="mailto" onclick="alert('доработать систему отправки сообщений')">
+                    <div class="iconMail">
+                        <img src="./assets/images/gmail.svg" alt="sendMail">
+                        <span>Your Email</span>
+                    </div>
+                    <div>
+                        <img src="./assets/images/Vector 190.svg" alt="arrowRight">
+                    </div>
+                </div>
+        </div>
+    </footer>
+
+    <div class="end">
+        <span>©2024 Copyrgights HeritageList all rights are reserved️ </span>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <script src="./assets/scripts/article_page_structure.js"></script>
 </body>

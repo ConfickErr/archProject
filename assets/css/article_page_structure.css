@@ -1,5 +1,319 @@
 @import url(./reset.css);
 
-h1 {
-    color: #EB5B00;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.logoNav {
+    position: absolute;
+    top: -60px;
+    z-index: 2;
+}
+
+.controlMenu {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32.74px;
+        text-align: center;
+        color: #000000;
+    }
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 280px;
+    position: relative;
+
+    input {
+        width: 240px;
+        height: 40px;
+        border-radius: 8px 8px 8px 8px;
+        background-color: #D9D9D9;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .clickToSearch {
+        width: 40px;
+        height: 100%;
+        background-color: #EA4D68;
+        border-radius: 8px 8px 8px 8px;
+        position: absolute;
+        right: 10px;
+        border: none;
+        text-align: center;
+        cursor: pointer;
+    }
+
+}
+
+.searchLanguage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+
+.dropbtn {
+    width: 56px;
+    height: 40px;
+    border-radius: 8px 8px 8px 8px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    transition: transform 0.6s;
+    background-color: #EA4D68;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.rotate-arrow {
+    transform: rotate(180deg);
+}
+
+
+.main {
+    background-color: #EB5B00;
+
+
+
+
+    h1 {
+        color: white;
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 87.3px;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .spanesInfo {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        width: 800px;
+        color: white;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+}
+
+
+.mainInfoPart,
+.map,
+.iframeDiv {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.mainInfoPart {
+    text-align: center;
+}
+
+.mainInfoPart p {
+    text-align: left;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mainInfoPart img {
+    border-radius: 18px 18px 18px 18px;
+    border: none;
+    width: 600px;
+    height: 400px;
+}
+
+.map {
+    text-align: center;
+    padding-bottom: 50px;
+
+    iframe {
+        border-radius: 18px 18px 18px 18px;
+        border: none;
+    }
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+
+    h2 {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 23.12px;
+        text-align: left;
+        color: #000000;
+    }
+
+    a {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23.12px;
+        text-align: left;
+        text-decoration: none;
+        color: #000000;
+    }
+}
+
+.firstLine {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+}
+
+.footerLogoName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    span {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 38.19px;
+        text-align: center;
+    }
+}
+
+.infoFooter {
+    width: 308px;
+    height: 46px;
+    font-size: 16px;
+    font-weight: 400;
+    /* line-height: 23.12px; */
+    text-align: left;
+}
+
+.number,
+.mail,
+.location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.mailto {
+    width: 307px;
+    height: 50px;
+    padding: 13px 16px 13px 16px;
+    border-radius: 10px 10px 10px 10px;
+    opacity: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.iconMail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.end {
+    text-align: center;
+    background-color: #113B48;
+    color: white;
+    padding: 10px;
+}
+
+#myBtn {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    transition: opacity 0.6s ease, visibility 0s 0.6s;
+    pointer-events: none;
+}
+
+#myBtn.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.6s ease;
+    pointer-events: auto;
+}
+
+#myBtn:hover {
+    background-color: #555;
+    transition: background-color 0.6s ease;
 }
