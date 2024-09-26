@@ -263,3 +263,26 @@ body {
     background-color: #555;
     transition: background-color 0.6s ease;
 }
+
+@media (max-width: 1120px) {
+    .main {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1050px) {
+    .searchLanguage .search {
+        display: none;
+    }
+}
+
+@media (max-width: 960px) {
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .firstLine {
+        align-items: center;
+    }
+}
