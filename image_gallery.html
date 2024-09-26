@@ -40,8 +40,22 @@
                     <a href="#">language3</a>
                 </div>
             </div>
+            <img onclick=showSidebar() src="assets/images/Menu.svg" alt="burgerMenu" class="burger-icon">
+        </div>
+        <div class="mobileMenu">
+            <img onclick=closeSidebar() src="assets/images/Close.svg" alt="close" class="close-icon">
+            <div class="mobileNav">
+                <div class="search"><input type="text"><button class="clickToSearch" id="clickToSearch"><img
+                    src="./assets/images/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg"
+                    alt="searchIcon"></button></div>
+                <a href="./streets.html">Küçələr</a>
+                <a href="./maps.html">Xəritələr</a>
+                <a href="./image_gallery.html">Fotolar</a>
+                <a href="./videos.html">Videolar</a>
+            </div>
         </div>
     </nav>
+
 
     <!-- Main -->
      <main class="main">
@@ -162,5 +176,6 @@
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <script src="./assets/scripts/image_gallery.js"></script>
+    <script src="assets/scripts/header.js"></script>
 </body>
 </html>
