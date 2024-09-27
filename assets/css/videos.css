@@ -135,10 +135,10 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    width: 300px;
+    width: 100vw;
     height: 100vh;
     z-index: 999;
-    padding-top: 20px;
+    padding-top: 40px;
     background-color: #fff;
 }
 
@@ -159,7 +159,9 @@ body {
 }
 
 .close-icon {
-    left: 0;
+    position: absolute;
+    top: 5px;
+    right: 0;
     margin-bottom: 5px;
     width: 40px;
 }
@@ -382,6 +384,14 @@ body {
 }
 
 @media (max-width: 960px) {
+    .main {
+        padding: 108px 0;
+    }
+
+    .main-title {
+        text-align: center;
+    }
+
     .footer {
         flex-direction: column;
         gap: 15px;
