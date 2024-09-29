@@ -36,13 +36,34 @@ function topFunction() {
 let clickToOpen = document.querySelector("#clickToOpen");
 let textDiv = document.querySelector("#textDiv");
 
+textDiv.style.display = "none";
+
 clickToOpen.addEventListener("click", () => {
-    if (textDiv.style.display === "none") {
-        textDiv.style.display = "block"; 
+    const isVisible = textDiv.style.display === "block";
+
+    textDiv.classList.add('animate__animated'); 
+
+    if (isVisible) {
+        
+        textDiv.classList.remove('animate__bounceIn');
+        textDiv.classList.add('animate__bounceOut');
     } else {
-        textDiv.style.display = "none";
+        
+        textDiv.style.display = "block"; 
+        textDiv.classList.remove('animate__bounceOut');
+        textDiv.classList.add('animate__bounceIn');
     }
+
+    void textDiv.offsetWidth;
+
+    textDiv.addEventListener('animationend', () => {
+        if (isVisible) {
+            textDiv.style.display = "none";
+        }
+        textDiv.classList.remove('animate__animated', 'animate__bounceOut', 'animate__bounceIn');
+    }, { once: true });
 });
+
 
 
 let clickToMoreInfo = document.querySelector("#clickToMoreInfo");

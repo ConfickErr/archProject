@@ -448,7 +448,7 @@ h1 {
     width: 207.83px;
     height: 138.55px;
     border-radius: 12px;
-    opacity: 1; /* Делаем изображение видимым */
+    opacity: 1;
 }
 
 .cardMonument h3 {
@@ -457,8 +457,8 @@ h1 {
     line-height: 24.55px;
     text-align: left;
     color: #000000;
-    margin-top: 10px; /* Отступ сверху */
-}
+    margin-top: 10px;
+}   
 
 /* Media Queries */
 
