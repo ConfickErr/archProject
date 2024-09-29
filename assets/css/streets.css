@@ -2,6 +2,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden !important;
 }
 
 body {
@@ -422,11 +423,11 @@ h1 {
 
 .grid-container2 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Два столбца одинаковой ширины */
-    grid-template-rows: auto; /* Автоматическая высота строк */
-    gap: 20px; /* Отступы между элементами */
-    justify-items: center; /* Центрирование карточек по горизонтали */
-    align-items: center; /* Центрирование карточек по вертикали */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
 }
 
 .cardMonument {
@@ -481,7 +482,7 @@ h1 {
     }
 
     .burger-icon {
-        display: block;
+        display: block !important;
     }
 }
 
@@ -506,4 +507,18 @@ h1 {
     .grid-container {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .grid-container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px !important; 
+    }
+
+}
+
+@media (max-width: 320px) {
+    .mailto {
+        padding: 5px 5px 5px 5px;
+    }   
 }

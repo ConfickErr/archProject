@@ -2,6 +2,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -311,6 +312,14 @@ body {
     .main {
         flex-direction: column;
     }
+    .controlMenu {
+        display: none;
+    }
+    .logoNav {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
 }
 
 @media (max-width: 1050px) {
@@ -326,6 +335,7 @@ body {
     .burger-icon {
         display: block;
     }
+
 }
 
 @media (max-width: 960px) {
@@ -337,6 +347,7 @@ body {
     .firstLine {
         align-items: center;
     }
+
 }
 
 @media (max-width: 460px){
@@ -344,4 +355,11 @@ body {
         width: 100%;
         justify-content: space-between;
     }
+    
+}
+
+@media (max-width: 320px) {
+    .mailto {
+        padding: 5px 5px 5px 5px;
+    }   
 }

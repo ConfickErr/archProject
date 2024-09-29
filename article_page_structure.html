@@ -9,6 +9,10 @@
     <link rel="manifest" href="./assets/images/favicon_package_v0.16/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="./assets/css/article_page_structure.css"> 
     <title>(передать имя памятника) | Memarliq İrsi</title>
 </head>
@@ -39,6 +43,19 @@
                     <a href="#">language2</a>
                     <a href="#">language3</a>
                 </div>
+            </div>
+            <img onclick=showSidebar() src="assets/images/Menu.svg" alt="burgerMenu" class="burger-icon">
+        </div>
+        <div class="mobileMenu">
+            <img onclick=closeSidebar() src="assets/images/Close.svg" alt="close" class="close-icon">
+            <div class="mobileNav">
+                <div class="search"><input type="text"><button class="clickToSearch" id="clickToSearch"><img
+                    src="./assets/images/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg"
+                    alt="searchIcon"></button></div>
+                <a href="./streets.html">Küçələr</a>
+                <a href="./maps.html">Xəritələr</a>
+                <a href="./image_gallery.html">Fotolar</a>
+                <a href="./videos.html">Videolar</a>
             </div>
         </div>
     </nav>
@@ -129,6 +146,7 @@
     </div>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
+    <script src="assets/scripts/header.js"></script>
     <script src="./assets/scripts/article_page_structure.js"></script>
 </body>
 </html>

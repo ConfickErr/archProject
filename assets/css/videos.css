@@ -2,6 +2,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -405,5 +406,15 @@ body {
 @media (max-width: 820px) {
     .gallery {
         grid-template-columns: repeat(1, 332px);
+    }
+}
+
+@media (max-width: 320px) {
+    .mailto {
+        padding: 5px 5px 5px 5px;
+    }   
+    .gallery-card {
+        transform: scale(0.9);
+        transform-origin: center;
     }
 }
